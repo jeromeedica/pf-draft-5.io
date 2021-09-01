@@ -1,0 +1,236 @@
+/* colors
+ #ED1C5B; light 
+ #E20E4E; dark
+*/
+
+/* reset */
+
+@import url('https://fonts.googleapis.com/css2?family=Poiret+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cookie&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=PT+Serif:ital@1&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+}
+
+body{
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    scroll-behavior: smooth;
+    
+    
+}
+
+
+h1{
+    font-family: 'Poiret One', cursive;
+    font-weight: bold;
+}
+
+p{
+    font-family: 'PT Serif', serif;
+}
+/* Sidebar start here  */
+.sidebar{
+    position: fixed;
+    background: rgba(5, 5, 5, 0.5);
+    width: 50px;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.sidebar ul{
+    
+    background: rgba(255, 255, 255, 1);
+    padding-bottom: 0;
+    
+
+    
+}
+
+.sidebar ul li {
+    background: rgb(219, 196, 200);
+    list-style: none;
+    border: 0px solid #fd417a;
+   
+}
+
+
+.sidebar ul li img{
+    text-decoration: none;
+    color: #ffffff;
+    margin-top: 0px;
+    padding: 5px 9px;
+    border: 0px solid red;
+
+
+}
+.sidebar ul li:hover{
+    background: #ff6598;
+    transition: all ease-in 0.5s;
+}
+
+/* Sidebar end Here  */
+
+/* Main Content Section Start Here  */
+
+#bg-section{
+    height: 100vh;
+    width: 100%;
+    background: url('./assets/bg.jpg');
+    background-size: cover;
+}
+
+.main{
+    background: rgba(199, 173, 173,0.5);
+    margin-left: 50px;
+    height: 100vh;
+    width: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-size: 5vw;
+    
+}
+
+.main h1{
+    font-size: 18vw;
+    text-transform: uppercase;
+    line-height: 1;
+    color: #ff6598;
+    text-shadow: 3px 0px 10px rgb(12, 11, 11);
+}
+
+.main p{
+    text-transform: capitalize;
+    color: rgb(48, 44, 44);
+    font-family: 'Cookie', cursive;
+    font-size: 2.5vw;
+}
+
+
+
+.main a{
+    font-size: 18px;
+    background: #ff6598;;
+    color: white;
+    margin-top: 20px;
+    padding: 10px 10px;
+    border-radius: 8px;
+    box-shadow:  0 0 4px black;
+    transition: all ease-in 0.5s;
+  
+}
+
+.main a:hover{
+    background: rgb(48, 44, 44);;
+    color: pink;
+}
+
+.services-ctr{
+    border: 0px solid red;
+    height: auto;
+    margin-left: 50px;
+}
+
+.services-ctr .header-top{
+    margin-top: 0px;
+    padding: 25px 35px;
+    background: burlywood;
+}
+
+.services-ctr .heading-center{
+    text-align: center;
+}
+
+.services-ctr h1{
+    line-height: 1.5;
+}
+
+.services-item-ctr{
+    border-radius: 15px 0 0 15px;
+    margin: 0 0px 0 10px ;
+    padding:  70px 20px;
+    background:  rgb(251, 58, 107);
+}
+.services-item-ctr .item1,.item2,.item3{
+    color: rgb(240, 234, 236);
+    padding: 10px 0px;
+    border-bottom: 0.1px solid #131313;
+}
+
+.services-ctr h1{
+    color: black;
+}
+
+.footer{
+    padding: 25px 28px;
+    background: rgb(39, 38, 41);
+}
+
+.footer h1{
+    color: pink;
+}
+
+.footer p{
+    color: whitesmoke;
+}
+
+
+@media screen and (max-width: 768px){
+
+    .main h1{
+        font-size: 18vw;
+       
+        
+    }
+    
+    .main p{
+       
+        font-size: 3.5vw;
+    }
+    
+    
+    
+    .main a{
+        font-size: 14px;
+        padding: 8px 10px;
+      
+    }
+}
+
+
+@media screen and (max-width: 414px){
+    body{
+        overflow-x: hidden;
+    }
+
+    .main h1{
+        font-size: 20vw;
+        margin-right: 10px;
+       
+        
+    }
+    
+    .main p{
+       
+        font-size: 4.5vw;
+    }
+    
+    
+    
+    .main a{
+        font-size: 14px;
+        padding: 5px 10px;
+      
+    }
+}
